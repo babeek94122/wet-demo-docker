@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nginx-static:
+    build: ../nginx-static
+    ports:
+      - 8080
+
+  spring-boot:
+    build: ../spring-boot-compiled
+    ports:
+      - 8080
